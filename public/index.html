@@ -1,0 +1,41 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Showdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to the updated CSS file -->
+  <link rel="stylesheet" href="styles.css"> <!-- Ensure styles.css is in public or adjust path -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <img src="logo.png" alt="Based Rock Paper Scissors Logo" class="small-logo">
+      <h1>Welcome to Rock Paper Scissors Game</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="root"></div> <!-- React app will be mounted here -->
+    <!-- Removed wallet connection elements to manage via React -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Based Rock Paper Scissors. All rights reserved.</p>
+    <p>
+      <a href="index.html">Back to Home</a>
+      <a href="litepaper.html">View Litepaper</a>
+      <a href="contact.html">Contact Us</a>
+    </p>
+  </footer>
+
+  <!-- Socket.IO -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- External JavaScript Bundle -->
+  <script src="/bundle.js"></script> <!-- Ensure bundle.js is correctly served -->
+</body>
+</html>
