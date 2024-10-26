@@ -10,6 +10,10 @@ import WalletConnectProvider from '@walletconnect/web3-provider';
 import { Buffer } from 'buffer';
 import process from 'process';
 
+// Add these lines at the top of your file
+window.Buffer = Buffer;
+window.process = process;
+
 const socket = io(
   process.env.NODE_ENV === 'production'
     ? process.env.REACT_APP_SOCKET_SERVER_URL_PROD  // Use production URL
